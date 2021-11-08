@@ -22,9 +22,15 @@ SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
 SPDX-FileType: OTHER
 "
 
+[layer_names]
+
+2d_physics/layer_1="Balls"
+
 [physics]
 
 common/enable_pause_aware_picking=true
+2d/default_linear_damp=0.0
+2d/default_angular_damp=0.0
 
 [rendering]
 
