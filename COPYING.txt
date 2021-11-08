@@ -4,4 +4,18 @@ SPDX-FileType: TEXT
 SPDX-FileType: DOCUMENTATION
 
 
+
+Copying information
+~~~~~~~~~~~~~~~~~~~
 This project uses SPDX license list short identifiers <https://spdx.github.io/spdx-spec/using-SPDX-short-identifiers-in-source-files/> and SPDX file tags <https://spdx.github.io/spdx-spec/file-tags/> to declare its copying information.
+
+.spdx-meta Files and their Partner Files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sometimes, this project will include .spdx-meta Files. Every .spdx-meta File has a Partner File.
+
+A .spdx-meta File is a file that is in the same directory as another file. The other file is its Partner File. The .spdx-meta File’s name is its Partner File’s name with “.spdx-meta” added to the end. For example:
+	file.ext — a hypothetical Partner File
+	file.ext.spdx-meta — that Partner File’s .spdx-meta File
+Everything in a .spdx-meta File applies to its Partner File. For example, if file.ext.spdx-meta contains “SPDX-FileComment” followed by “: This file is the best!”, then that means that file.ext’s FileComment is “This file is the best!” It does not mean that file.ext.spdx-meta’s FileComment is “This file is the best!”
+
+All .spdx-meta Files in this project were dedicated to the public domain using the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.

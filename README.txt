@@ -8,6 +8,10 @@ SPDX-FileType: DOCUMENTATION
 Simple Brick Breaker
 ~~~~~~~~~~~~~~~~~~~~
 
+Hints for contributors
+~~~~~~~~~~~~~~~~~~~~~~
+- The .pxo files are Pixelorama projects <https://orama-interactive.itch.io/pixelorama>.
+
 pre-commit
 ~~~~~~~~~~
 If you decide to contribute to this project, then you may want pre-commit <https://pre-commit.com/> to automatically check your contributions. To do so:
