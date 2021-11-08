@@ -10,11 +10,15 @@ Simple Brick Breaker
 
 Hints for contributors
 ~~~~~~~~~~~~~~~~~~~~~~
-- The .pxo files are Pixelorama projects <https://orama-interactive.itch.io/pixelorama>.
-- The project/ folder is a Godot project <https://godotengine.org/>.
-- Before adding images to the project, I convert them into lossless WebPs using cwebp to make them smaller:
+• The .pxo files are Pixelorama projects <https://orama-interactive.itch.io/pixelorama>.
+• The project/ folder is a Godot project <https://godotengine.org/>.
+• Before adding images to the project, I convert them into lossless WebPs using cwebp to make them smaller:
 	cwebp input.png -o lossless output.webp
 Cwebp is from libwebp <https://developers.google.com/speed/webp/>.
+• SPDX metadata for Godot project files often end up in weird places:
+	◦ project.godot — it’s in a custom property named “SPDX Metadata”
+	◦ .import files — it’s in a companion .spdx-meta file
+	◦ .tscn files — it’s in a metadata entry named “SPDX Metadata”. Open the file in a text editor and look for the property named “__meta__”. In that dictionary, look for “SPDX Metadata”.
 
 pre-commit
 ~~~~~~~~~~
