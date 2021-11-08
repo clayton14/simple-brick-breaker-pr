@@ -1,0 +1,38 @@
+# yamllint disable rule:line-length
+# SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+# SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+# SPDX-FileType: SOURCE
+# yamllint enable
+
+# I wouldn’t call a YAML file source code, but I also wouldn’t call an HTML file
+# source code. They’re both written in markup languages, not programming
+# languages. That being said, the SPDX Spec (v2.2.1) uses an HTML file as an
+# example of a SOURCE file
+# <https://spdx.github.io/spdx-spec/file-information/#831-description>.
+
+
+%YAML 1.2
+---
+repos:
+    -
+        repo: https://github.com/adrienverge/yamllint
+        rev: v1.26.3
+        hooks:
+            - id: yamllint
+    -
+        repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v4.0.1
+        hooks:
+            - id: check-case-conflict
+            - id: end-of-file-fixer
+            - id: mixed-line-ending
+            - id: trailing-whitespace
+    -
+        repo: https://github.com/jumanjihouse/pre-commit-hooks
+        rev: 2.1.5
+        hooks:
+            -
+                id: forbid-space-in-indent
+                # YAML requires spaces for indentation. See:
+                # <https://yaml.org/spec/1.2.2/#61-indentation-spaces>
+                exclude: '.*\.yaml'
