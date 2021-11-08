@@ -9,6 +9,12 @@ Copying information
 ~~~~~~~~~~~~~~~~~~~
 This project uses SPDX license list short identifiers <https://spdx.github.io/spdx-spec/using-SPDX-short-identifiers-in-source-files/> and SPDX file tags <https://spdx.github.io/spdx-spec/file-tags/> to declare its copying information.
 
+Where to Find the Licenses
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+A copy of each license that this project uses can be found in the LICENSES/ folder. Each file is titled using an SPDX license-id or license-ref followed by “.txt” (see <https://spdx.github.io/spdx-spec/SPDX-license-expressions/#d1-overview>). For example, if this project had a file that was under the “BSD Zero Clause License” <https://spdx.org/licenses/0BSD.html>, the there would be a copy of that license at “LICENSES/0BSD.txt”. Another example: a file in this project contains “SPDX-License-Identifier” followed by “: LicenseRef-MIT-Godot”. That means that a copy of that file’s license can be found at “LICENSES/LicenseRef-MIT-Godot.txt”.
+
+CC0-1.0 is used as a license for only one file (see “Note About Copying Information.txt”). It can be found at “LEGAL TOOLS/CC0-1.0.txt”.
+
 .spdx-meta Files and their Partner Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Sometimes, this project will include .spdx-meta Files. Every .spdx-meta File has a Partner File.

@@ -1,0 +1,4 @@
+SPDX-License-Identifier: LicenseRef-MIT-Godot
+SPDX-FileCopyrightText: Copyright (c) 2007-2021 Juan Linietsky, Ariel Manzur. Copyright (c) 2014-2021 Godot Engine contributors (cf. AUTHORS.md).
+SPDX-LicenseComments: Godot comes with import templates. When the user selects a template, Godot automatically replaces any import settings with the ones from the template. This file was created by applying the one of those templates. The only things in this file that weren’t copied directly from the template are the “remap/path”, “deps/source_file” and “deps/dest_files” properties. It looks like the file “editor/import/resource_importer_texture.cpp” from Godot’s source code (v3.4-stable) contains the data that makes up the templates. To keep things simple, I decided to have this file’s license be the same as resource_importer_texture.cpp’s license.
+SPDX-FileType: OTHER

@@ -13,6 +13,7 @@
 
 %YAML 1.2
 ---
+exclude: '^(LEGAL TOOLS|LICENSES)/.*\.txt$'
 repos:
     -
         repo: https://github.com/adrienverge/yamllint

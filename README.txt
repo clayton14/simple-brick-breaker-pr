@@ -11,6 +11,10 @@ Simple Brick Breaker
 Hints for contributors
 ~~~~~~~~~~~~~~~~~~~~~~
 - The .pxo files are Pixelorama projects <https://orama-interactive.itch.io/pixelorama>.
+- The project/ folder is a Godot project <https://godotengine.org/>.
+- Before adding images to the project, I convert them into lossless WebPs using cwebp to make them smaller:
+	cwebp input.png -o lossless output.webp
+Cwebp is from libwebp <https://developers.google.com/speed/webp/>.
 
 pre-commit
 ~~~~~~~~~~
