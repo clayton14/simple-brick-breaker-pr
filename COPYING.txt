@@ -1,0 +1,7 @@
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: TEXT
+SPDX-FileType: DOCUMENTATION
+
+
+This project uses SPDX license list short identifiers <https://spdx.github.io/spdx-spec/using-SPDX-short-identifiers-in-source-files/> and SPDX file tags <https://spdx.github.io/spdx-spec/file-tags/> to declare its copying information.
