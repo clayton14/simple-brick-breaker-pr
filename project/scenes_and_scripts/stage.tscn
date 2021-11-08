@@ -20,6 +20,7 @@ SPDX-FileType: OTHER
 }
 
 [node name="Barriers" type="StaticBody2D" parent="."]
+collision_layer = 0
 
 [node name="Ceiling" type="CollisionShape2D" parent="Barriers"]
 shape = SubResource( 1 )
