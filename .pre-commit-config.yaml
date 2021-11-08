@@ -13,6 +13,7 @@
 
 %YAML 1.2
 ---
+# REMEMBER: When you update this one, update the one for yamllint as well.
 exclude: '^(LEGAL TOOLS|LICENSES)/.*\.txt$'
 repos:
     -
@@ -36,4 +37,7 @@ repos:
                 id: forbid-space-in-indent
                 # YAML requires spaces for indentation. See:
                 # <https://yaml.org/spec/1.2.2/#61-indentation-spaces>
-                exclude: '.*\.yaml'
+                # project.godot is a false positive.
+                # yamllint disable rule:line-length
+                exclude: '^(LEGAL TOOLS|LICENSES)/.*\.txt$|.*\.yaml$|^project/project\.godot$'
+                # yamllint enable
