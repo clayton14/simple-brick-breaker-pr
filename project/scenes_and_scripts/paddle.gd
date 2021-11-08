@@ -4,9 +4,16 @@
 extends Node2D
 
 
+const BALL_SPEED_FACTOR := 1.05  # Unit: 1
+const BALL_MAX_ANGLE := deg2rad(85)  # Unit: radians clockwise from north
 const MAX_SPEED := 500  # Unit: px/sec
 const MOUSE_CONTROL_DISABLING_ACTIONS := ["ui_left", "ui_right"]
 onready var mouse_controls := false
+onready var collision_rectangle: RectangleShape2D = $CollisionShape2D.shape
+
+
+func half_width() -> float:
+	return collision_rectangle.extents.x / 2.0
 
 
 func _physics_process(delta: float) -> void:
@@ -31,3 +38,21 @@ func _unhandled_input(event: InputEvent) -> void:
 			if event.is_action_pressed(action):
 				mouse_controls = false
 				return
+
+
+func _on_Paddle_body_entered(ball: RigidBody2D) -> void:
+	var distance_from_center: float = ball.position.x - position.x  # Unit: px
+	# If center_ratio is -1, then the Ball hit the left edge of the Paddle.
+	# If center_ratio is -0.5, then the Ball hit half-way between the left edge
+	# and the center of the Paddle.
+	# If center_ratio is 0, the the Ball hit the center of the Paddle.
+	# If center_ratio is 0.5, then the Ball hit half-way between the center and
+	# the left edge of the Paddle.
+	# If center_ratio is 1, then the Ball hit the right edge of the Paddle.
+	var center_ratio: float = distance_from_center / half_width()  # Unit: 1
+	# This is needed because the Balls center could be beyound the Paddle’s
+	center_ratio = clamp(center_ratio, -1, 1)
+
+	var new_linear_velocity := Vector2.UP.rotated(BALL_MAX_ANGLE * center_ratio)
+	new_linear_velocity *= ball.linear_velocity.length() * BALL_SPEED_FACTOR
+	ball.linear_velocity = new_linear_velocity
