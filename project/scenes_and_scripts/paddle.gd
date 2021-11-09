@@ -4,7 +4,7 @@
 extends Node2D
 
 
-const BALL_SPEED_FACTOR := 1.01  # Unit: 1
+const BALL_SPEED_FACTOR := 1.04  # Unit: 1
 const BALL_MAX_ANGLE := deg2rad(85)  # Unit: radians clockwise from north
 const MAX_SPEED := 500  # Unit: px/sec
 const MOUSE_CONTROL_DISABLING_ACTIONS := ["ui_left", "ui_right"]
