@@ -15,12 +15,16 @@ onready var mouse_controls := false
 onready var collision_rectangle: RectangleShape2D = $CollisionShape2D.shape
 
 
-func _ready() -> void:
+func spawn_new_ball() -> void:
 	held_ball = Ball.instance()
 	held_ball.start_being_held()
 	held_ball.position.y -= collision_rectangle.extents.y
 	held_ball.position.y -= held_ball.radius()
 	add_child(held_ball)
+
+
+func _ready() -> void:
+	spawn_new_ball()
 
 
 func half_width() -> float:
