@@ -4,7 +4,22 @@
 extends Node2D
 
 
-const SPEED: float = deg2rad(1)  # Unit: rad/sec
+export(float) var velocity_degrees: float = 1 setget set_velocity_degrees # Unit: deg/sec
+var _velocity: float  # Unit: rad/sec
+
+
+func set_velocity_degrees(new_velocity_degrees: float) -> void:
+	velocity_degrees = new_velocity_degrees
+	_update_velocity()
+
+
+func _update_velocity() -> void:
+	_velocity = deg2rad(velocity_degrees)
+
+
+func _ready():
+	_update_velocity()
+
 
 func _physics_process(delta: float) -> void:
-	rotate(SPEED * delta)
+	rotate(_velocity * delta)
