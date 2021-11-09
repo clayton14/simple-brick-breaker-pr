@@ -38,6 +38,7 @@ enable_mouse_controls={
 [layer_names]
 
 2d_physics/layer_1="Balls"
+2d_physics/layer_2="Bricks"
 
 [physics]
 
