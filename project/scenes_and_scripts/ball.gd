@@ -4,7 +4,27 @@
 extends RigidBody2D
 
 
+const NORMAL_COLLISION_LAYER := 1
+const NORMAL_COLLISION_MASK := 2
 const MIN_Y_SPEED := 10  # Unit: px/sec
+var old_linear_velocity: Vector2
+
+
+func radius() -> float:
+	return $CollisionShape2D.shape.radius
+
+
+func start_being_held() -> void:
+	old_linear_velocity = linear_velocity
+	mode = MODE_KINEMATIC
+	layers = 0
+
+
+func stop_being_held() -> void:
+	mode = MODE_RIGID
+	collision_layer = NORMAL_COLLISION_LAYER
+	collision_mask = NORMAL_COLLISION_MASK
+	linear_velocity = old_linear_velocity
 
 
 # When this Ball collides with anything other than the Paddle

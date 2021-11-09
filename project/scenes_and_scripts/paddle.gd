@@ -4,12 +4,23 @@
 extends Node2D
 
 
+const Ball: PackedScene = preload("res://scenes_and_scripts/ball.tscn")
+const BallType: Script = preload("res://scenes_and_scripts/ball.gd")
 const BALL_SPEED_FACTOR := 1.04  # Unit: 1
 const BALL_MAX_ANGLE := deg2rad(85)  # Unit: radians clockwise from north
 const MAX_SPEED := 500  # Unit: px/sec
 const MOUSE_CONTROL_DISABLING_ACTIONS := ["ui_left", "ui_right"]
+onready var held_ball: BallType
 onready var mouse_controls := false
 onready var collision_rectangle: RectangleShape2D = $CollisionShape2D.shape
+
+
+func _ready() -> void:
+	held_ball = Ball.instance()
+	held_ball.start_being_held()
+	held_ball.position.y -= collision_rectangle.extents.y
+	held_ball.position.y -= held_ball.radius()
+	add_child(held_ball)
 
 
 func half_width() -> float:
@@ -31,13 +42,22 @@ func _physics_process(delta: float) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("enable_mouse_controls"):
+	if not mouse_controls and event.is_action_pressed("enable_mouse_controls"):
 		mouse_controls = true
+		# Allow the player to enable mouse controls without releasing the Ball.
+		return
 	else:
 		for action in MOUSE_CONTROL_DISABLING_ACTIONS:
 			if event.is_action_pressed(action):
 				mouse_controls = false
-				return
+				break
+
+	if held_ball != null and event.is_action_pressed("release_ball"):
+		var ball_global_position: Vector2 = held_ball.global_position
+		remove_child(held_ball)
+		held_ball.global_position = ball_global_position
+		held_ball.stop_being_held()
+		get_parent().add_child(held_ball)
 
 
 func _on_Paddle_body_entered(ball: RigidBody2D) -> void:
