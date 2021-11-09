@@ -4,5 +4,12 @@
 extends Node
 
 
-func _on_Brick_body_entered(_body: Node) -> void:
-	queue_free()
+var _rng := RandomNumberGenerator.new()
+
+
+func _init() -> void:
+	_rng.randomize()
+
+
+func randi_range(from: int, to: int) -> int:
+	return _rng.randi_range(from, to)
