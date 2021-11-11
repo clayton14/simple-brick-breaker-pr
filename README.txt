@@ -18,7 +18,7 @@ Cwebp is from libwebp <https://developers.google.com/speed/webp/>.
 • SPDX metadata for Godot project files often end up in weird places:
 	◦ project.godot — it’s in a custom property named “SPDX Metadata”
 	◦ .import files — it’s in a companion .spdx-meta file
-	◦ .tscn files — it’s in root Node’s metadata entry named “SPDX Metadata”. Open the file in a text editor and look for the property named “__meta__”. In that dictionary, look for “SPDX Metadata”.
+	◦ .tscn files — it’s in a metadata entry named “SPDX Metadata” for one of the scenes Nodes. Open the file in a text editor and look for the property named “__meta__”. In that dictionary, look for “SPDX Metadata”.
 
 pre-commit
 ~~~~~~~~~~
