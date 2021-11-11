@@ -4,6 +4,7 @@
 extends Node2D
 
 
+signal level_finished_ball_caught
 const Ball: PackedScene = preload("res://scenes_and_scripts/ball.tscn")
 const BallType: Script = preload("res://scenes_and_scripts/ball.gd")
 const Util: Script = preload("res://scenes_and_scripts/util.gd")
@@ -106,3 +107,4 @@ func _on_Paddle_body_entered(ball: RigidBody2D) -> void:
 		ball.set_block_signals(true)
 		grab_ball(ball)
 		ball.set_block_signals(false)
+		emit_signal("level_finished_ball_caught")
