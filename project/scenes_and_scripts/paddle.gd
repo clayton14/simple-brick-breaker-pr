@@ -21,10 +21,10 @@ func grab_ball(ball: BallType) -> void:
 	if ball_parent == null:
 		ball.start_being_held()
 	else:
-		var new_pos: Vector2 = ball.global_position - global_position
+		var new_x: float = ball.global_position.x - global_position.x
 		ball_parent.remove_child(ball)
 		ball.start_being_held()
-		ball.position = new_pos
+		ball.position.x = new_x
 
 	# Place the Ball on the top edge of this Paddle
 	ball.position.y = -collision_rectangle.extents.y - ball.radius()
