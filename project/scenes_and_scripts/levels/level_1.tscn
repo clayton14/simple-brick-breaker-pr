@@ -45,6 +45,9 @@ rotation = -1.57079
 [node name="Rotator2" type="Node2D" parent="." index="4"]
 position = Vector2( 512, 472 )
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
 velocity_degrees = -4.0
 
 [node name="Goal" parent="Rotator2" index="0" instance=ExtResource( 5 )]

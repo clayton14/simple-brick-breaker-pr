@@ -4,10 +4,13 @@
 extends Node
 
 
+const BallType: Script = preload("res://scenes_and_scripts/ball.gd")
 const PaddleType: Script = preload("res://scenes_and_scripts/paddle.gd")
 onready var Paddle: PaddleType = $Paddle
 
 
 func _on_Pit_body_entered(body: PhysicsBody2D) -> void:
 	body.queue_free()
-	Paddle.call_deferred("spawn_new_ball")
+
+	if body is BallType:
+		Paddle.call_deferred("spawn_new_ball")
