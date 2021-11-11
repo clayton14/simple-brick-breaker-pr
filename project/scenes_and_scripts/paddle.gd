@@ -25,6 +25,9 @@ func grab_ball(ball: BallType) -> void:
 		ball_parent.remove_child(ball)
 		ball.start_being_held()
 		ball.position = new_pos
+
+	# Place the Ball on the top edge of this Paddle
+	ball.position.y = -collision_rectangle.extents.y - ball.radius()
 	call_deferred("_finish_grabbing_ball", ball)
 
 
@@ -32,11 +35,9 @@ func _finish_grabbing_ball(ball: BallType) -> void:
 	add_child(ball)
 	held_ball = ball
 
+
 func spawn_new_ball() -> void:
-	var new_ball: BallType = Ball.instance()
-	new_ball.position.y -= collision_rectangle.extents.y
-	new_ball.position.y -= new_ball.radius()
-	grab_ball(new_ball)
+	grab_ball(Ball.instance())
 
 
 func _ready() -> void:
