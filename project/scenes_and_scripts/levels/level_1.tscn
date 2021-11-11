@@ -15,6 +15,13 @@ script = ExtResource( 2 )
 [node name="Rotator" type="Node2D" parent="." index="3"]
 position = Vector2( 512, 472 )
 script = ExtResource( 4 )
+__meta__ = {
+"SPDX Metadata": "
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: OTHER
+"
+}
 
 [node name="Hub" parent="Rotator" index="0" instance=ExtResource( 3 )]
 modulate = Color( 0.392157, 0.0705882, 0.0705882, 1 )
