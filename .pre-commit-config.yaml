@@ -38,6 +38,7 @@ repos:
                 # YAML requires spaces for indentation. See:
                 # <https://yaml.org/spec/1.2.2/#61-indentation-spaces>
                 # project.godot is a false positive.
+                # split_ball.svg was created using Inkscape.
                 # yamllint disable rule:line-length
-                exclude: '^(LEGAL TOOLS|LICENSES)/.*\.txt$|.*\.yaml$|^project/project\.godot$'
+                exclude: '^(LEGAL TOOLS|LICENSES)/.*\.txt$|.*\.yaml$|^project/project\.godot$|^project/art/split_ball\.svg$'
                 # yamllint enable

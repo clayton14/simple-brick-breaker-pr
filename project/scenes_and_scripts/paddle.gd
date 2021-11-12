@@ -4,15 +4,13 @@
 extends Node2D
 
 
-signal level_finished_ball_caught
+signal level_finished_balls_caught
 const Ball: PackedScene = preload("res://scenes_and_scripts/ball.tscn")
-const BallType: Script = preload("res://scenes_and_scripts/ball.gd")
-const Util: Script = preload("res://scenes_and_scripts/util.gd")
 const BALL_SPEED_FACTOR := 1.04  # Unit: 1
 const BALL_MAX_ANGLE := deg2rad(85)  # Unit: radians clockwise from north
 const MAX_SPEED := 500  # Unit: px/sec
 const MOUSE_CONTROL_DISABLING_ACTIONS := ["ui_left", "ui_right"]
-onready var held_ball: BallType
+onready var held_balls: Array
 onready var mouse_controls := false
 onready var collision_rectangle: RectangleShape2D = $CollisionShape2D.shape
 
@@ -34,7 +32,7 @@ func grab_ball(ball: BallType) -> void:
 
 func _finish_grabbing_ball(ball: BallType) -> void:
 	add_child(ball)
-	held_ball = ball
+	held_balls.append(ball)
 
 
 func spawn_new_ball() -> void:
@@ -74,37 +72,53 @@ func _unhandled_input(event: InputEvent) -> void:
 				mouse_controls = false
 				break
 
-	if held_ball != null and event.is_action_pressed("release_ball"):
-		var ball_global_position: Vector2 = held_ball.global_position
-		remove_child(held_ball)
-		held_ball.global_position = ball_global_position
-		held_ball.stop_being_held()
-		get_parent().add_child(held_ball)
-		held_ball = null
+	if len(held_balls) != 0 and event.is_action_pressed("release_ball"):
+		while len(held_balls) > 0:
+			var held_ball: BallType = held_balls.pop_front()
+			var ball_global_position: Vector2 = held_ball.global_position
+			remove_child(held_ball)
+			held_ball.global_position = ball_global_position
+			held_ball.stop_being_held()
+			get_parent().add_child(held_ball)
 
 
-func _on_Paddle_body_entered(ball: RigidBody2D) -> void:
-	var distance_from_center: float = ball.position.x - position.x  # Unit: px
-	# If center_ratio is -1, then the Ball hit the left edge of the Paddle.
-	# If center_ratio is -0.5, then the Ball hit half-way between the left
-	# edge and the center of the Paddle.
-	# If center_ratio is 0, the the Ball hit the center of the Paddle.
-	# If center_ratio is 0.5, then the Ball hit half-way between the center
-	# and the left edge of the Paddle.
-	# If center_ratio is 1, then the Ball hit the right edge of the Paddle.
-	var center_ratio: float = distance_from_center / half_width()  # Unit: 1
-	# This is needed because the Balls center could be beyound the Paddle’s.
-	center_ratio = clamp(center_ratio, -1, 1)
+func all_bricks_cleared() -> bool:
+	return not get_tree().has_group("Bricks")
 
-	var new_linear_velocity: Vector2
-	new_linear_velocity = Vector2.UP.rotated(BALL_MAX_ANGLE * center_ratio)
-	new_linear_velocity *= ball.linear_velocity.length() * BALL_SPEED_FACTOR
-	ball.linear_velocity = new_linear_velocity
 
-	if Util.is_level_over(get_tree()):
-		# These are needed to avoid this issue:
-		# <https://github.com/godotengine/godot/issues/14578>
-		ball.set_block_signals(true)
-		grab_ball(ball)
-		ball.set_block_signals(false)
-		emit_signal("level_finished_ball_caught")
+func check_if_level_is_over() -> void:
+	if len(get_tree().get_nodes_in_group("Balls")) == len(held_balls):
+		emit_signal("level_finished_balls_caught")
+
+
+func _on_Paddle_body_entered(body: RigidBody2D) -> void:
+	if body is BallType:
+		# Unit: px
+		var distance_from_center: float = body.position.x - position.x
+		# If center_ratio is -1, then the Ball hit the left edge of the Paddle.
+		# If center_ratio is -0.5, then the Ball hit half-way between the left
+		# edge and the center of the Paddle.
+		# If center_ratio is 0, the the Ball hit the center of the Paddle.
+		# If center_ratio is 0.5, then the Ball hit half-way between the center
+		# and the left edge of the Paddle.
+		# If center_ratio is 1, then the Ball hit the right edge of the Paddle.
+		var center_ratio: float = distance_from_center / half_width()  # Unit: 1
+		# This is needed because the Balls center could be beyound the Paddle’s.
+		center_ratio = clamp(center_ratio, -1, 1)
+
+		var new_linear_velocity: Vector2
+		new_linear_velocity = Vector2.UP.rotated(BALL_MAX_ANGLE * center_ratio)
+		new_linear_velocity *= body.linear_velocity.length() * BALL_SPEED_FACTOR
+		body.linear_velocity = new_linear_velocity
+
+		# If all of the bricks have been destroyed
+		if all_bricks_cleared():
+			# These are needed to avoid this issue:
+			# <https://github.com/godotengine/godot/issues/14578>
+			body.set_block_signals(true)
+			grab_ball(body)
+			body.set_block_signals(false)
+			check_if_level_is_over()
+	else:  # body is SplitBall
+		get_tree().call_group("Balls", "split")
+		body.queue_free()

@@ -49,4 +49,3 @@ shape = SubResource( 5 )
 position = Vector2( 512, 1072 )
 
 [connection signal="body_entered" from="Pit" to="." method="_on_Pit_body_entered"]
-[connection signal="level_finished_ball_caught" from="Paddle" to="." method="_on_Paddle_level_finished_ball_caught"]

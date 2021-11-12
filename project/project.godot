@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "RigidBody2D",
+"class": "BallType",
+"language": "GDScript",
+"path": "res://scenes_and_scripts/ball.gd"
+}, {
+"base": "Node",
+"class": "ParentOfAllLevelsType",
+"language": "GDScript",
+"path": "res://scenes_and_scripts/parent_of_all_levels.gd"
+} ]
+_global_script_class_icons={
+"BallType": "",
+"ParentOfAllLevelsType": ""
+}
+
 [application]
 
 config/name="Simple Brick Breaker"
@@ -17,6 +33,7 @@ config/icon="res://art/icon.webp"
 [autoload]
 
 GlobalRNG="*res://scenes_and_scripts/autoload/global_rng.tscn"
+StatCounter="*res://scenes_and_scripts/autoload/stat_counter.tscn"
 
 [display]
 
@@ -51,6 +68,7 @@ release_ball={
 2d_physics/layer_1="Balls"
 2d_physics/layer_2="Bricks"
 2d_physics/layer_3="Falling Bricks"
+2d_physics/layer_4="Power-ups"
 
 [physics]
 

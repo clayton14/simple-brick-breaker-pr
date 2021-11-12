@@ -9,9 +9,6 @@ extents = Vector2( 24, 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 shape = SubResource( 1 )
-
-[node name="Polygon2D" type="Polygon2D" parent="." index="1"]
-polygon = PoolVector2Array( -24, 8, -24, -8, 24, -8, 24, 8 )
 __meta__ = {
 "SPDX Metadata": "
 SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
@@ -19,3 +16,6 @@ SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
 SPDX-FileType: OTHER
 "
 }
+
+[node name="Polygon2D" type="Polygon2D" parent="." index="1"]
+polygon = PoolVector2Array( -24, 8, -24, -8, 24, -8, 24, 8 )
