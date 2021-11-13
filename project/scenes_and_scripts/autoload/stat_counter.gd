@@ -7,14 +7,16 @@ extends Object
 const BaseBrickType: Script = preload("res://scenes_and_scripts/bricks/base_brick.gd")
 const SplitBall: PackedScene = preload("res://scenes_and_scripts/power_ups/split_ball.tscn")
 var bricks_broken := 0
+var bricks_until_next_powerup := 20
 # The ParentOfAllLevels itself is what sets this variable
 var ParentOfAllLevels: ParentOfAllLevelsType
 
 
 func on_Brick_broken(brick: BaseBrickType) -> void:
 	bricks_broken += 1
-	if bricks_broken >= 10:
-		bricks_broken -= 10
+	if bricks_broken >= bricks_until_next_powerup:
+		bricks_broken -= bricks_until_next_powerup
+		bricks_until_next_powerup += 1
 		var split_ball: Node = SplitBall.instance()
 		call_deferred("finish_creating_power_up", split_ball, brick.global_position)
 
