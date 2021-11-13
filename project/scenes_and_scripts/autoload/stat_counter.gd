@@ -7,6 +7,7 @@ extends Object
 const BaseBrickType: Script = preload("res://scenes_and_scripts/bricks/base_brick.gd")
 const SplitBall: PackedScene = preload("res://scenes_and_scripts/power_ups/split_ball.tscn")
 var bricks_broken := 0
+# The ParentOfAllLevels itself is what sets this variable
 var ParentOfAllLevels: ParentOfAllLevelsType
 
 
