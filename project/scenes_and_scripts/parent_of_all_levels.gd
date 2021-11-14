@@ -19,7 +19,7 @@ func switch_to_level(new_level: PackedScene) -> void:
 
 func _ready():
 	get_node("/root/StatCounter").ParentOfAllLevels = self
-	switch_to_level(preload("res://scenes_and_scripts/levels/level_1.tscn"))
+	switch_to_level(preload("res://scenes_and_scripts/levels/level_2.tscn"))
 
 
 func _on_Pit_body_entered(body: PhysicsBody2D) -> void:

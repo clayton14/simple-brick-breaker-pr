@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
+[ext_resource path="res://scenes_and_scripts/bricks/1950s_soccer_ball_panel.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes_and_scripts/bricks/romanian_flag_column.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes_and_scripts/bricks/brick.tscn" type="PackedScene" id=3]
 
 [node name="Level2" type="Node"]
 __meta__ = {
@@ -12,562 +12,303 @@ SPDX-FileType: OTHER
 "
 }
 
-[node name="RomanianFlagBlue" type="Node2D" parent="."]
-modulate = Color( 0, 0.168627, 0.498039, 1 )
-position = Vector2( 36, 16 )
+[node name="RomanianFlag" type="Node2D" parent="."]
+position = Vector2( 376, 136 )
 __meta__ = {
-"SPDX Metadata": "
-SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
-SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
-SPDX-FileType: OTHER
-",
-"_editor_description_": "See: https://en.wikipedia.org/wiki/File:Flag_of_Romania.svg#Colors
-
-L = 1000 px
-l = 666.6… px
-C = 333.3… px"
+"_edit_group_": true
 }
 
-[node name="Brick" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
+[node name="RomanianFlagColumn" parent="RomanianFlag" instance=ExtResource( 2 )]
+modulate = Color( 0, 0.168627, 0.498039, 1 )
 
-[node name="Brick2" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 0 )
-
-[node name="Brick3" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
+[node name="RomanianFlagColumn2" parent="RomanianFlag" instance=ExtResource( 2 )]
+modulate = Color( 0.988235, 0.819608, 0.0862745, 1 )
 position = Vector2( 112, 0 )
 
-[node name="Brick4" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 0 )
-
-[node name="Brick5" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
+[node name="RomanianFlagColumn3" parent="RomanianFlag" instance=ExtResource( 2 )]
+modulate = Color( 0.807843, 0.0666667, 0.14902, 1 )
 position = Vector2( 224, 0 )
 
-[node name="Brick6" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 0 )
-
-[node name="Brick7" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 24 )
-
-[node name="Brick8" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 24 )
-
-[node name="Brick9" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 24 )
-
-[node name="Brick10" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 24 )
-
-[node name="Brick11" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 24 )
-
-[node name="Brick12" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 24 )
-
-[node name="Brick13" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 48 )
-
-[node name="Brick19" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 72 )
-
-[node name="Brick20" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 96 )
-
-[node name="Brick21" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 120 )
-
-[node name="Brick22" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 144 )
-
-[node name="Brick23" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 168 )
-
-[node name="Brick24" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 192 )
-
-[node name="Brick25" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 216 )
-
-[node name="Brick26" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 240 )
-
-[node name="Brick27" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 264 )
-
-[node name="Brick28" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 288 )
-
-[node name="Brick29" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 312 )
-
-[node name="Brick30" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 336 )
-
-[node name="Brick31" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 360 )
-
-[node name="Brick32" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 384 )
-
-[node name="Brick33" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 408 )
-
-[node name="Brick34" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 432 )
-
-[node name="Brick35" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 456 )
-
-[node name="Brick36" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 480 )
-
-[node name="Brick37" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 504 )
-
-[node name="Brick38" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 528 )
-
-[node name="Brick39" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 552 )
-
-[node name="Brick40" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 576 )
-
-[node name="Brick41" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 600 )
-
-[node name="Brick42" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 624 )
-
-[node name="Brick43" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 0, 648 )
-
-[node name="Brick44" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 72 )
-
-[node name="Brick45" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 96 )
-
-[node name="Brick46" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 120 )
-
-[node name="Brick47" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 144 )
-
-[node name="Brick48" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 168 )
-
-[node name="Brick49" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 192 )
-
-[node name="Brick50" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 216 )
-
-[node name="Brick51" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 240 )
-
-[node name="Brick52" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 264 )
-
-[node name="Brick54" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 40, 300 )
-rotation = -1.5708
-
-[node name="Brick56" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 360 )
-
-[node name="Brick76" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 336 )
-
-[node name="Brick57" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 384 )
-
-[node name="Brick58" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 408 )
-
-[node name="Brick59" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 432 )
-
-[node name="Brick60" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 456 )
-
-[node name="Brick61" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 480 )
-
-[node name="Brick62" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 504 )
-
-[node name="Brick63" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 528 )
-
-[node name="Brick64" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 552 )
-
-[node name="Brick65" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 576 )
-
-[node name="Brick66" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 600 )
-
-[node name="Brick67" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 624 )
-
-[node name="Brick68" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 648 )
-
-[node name="Brick69" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 72 )
-
-[node name="Brick70" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 96 )
-
-[node name="Brick71" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 120 )
-
-[node name="Brick72" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 144 )
-
-[node name="Brick73" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 168 )
-
-[node name="Brick74" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 192 )
-
-[node name="Brick75" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 216 )
-
-[node name="Brick83" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 96, 392 )
-rotation = -1.5708
-
-[node name="Brick101" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 120, 392 )
-rotation = -1.5708
-
-[node name="Brick94" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 72 )
-
-[node name="Brick95" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 96 )
-
-[node name="Brick96" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 120 )
-
-[node name="Brick97" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 144 )
-
-[node name="Brick98" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 168 )
-
-[node name="Brick99" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 192 )
-
-[node name="Brick100" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 216 )
-
-[node name="Brick108" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 160, 392 )
-rotation = 1.5708
-
-[node name="Brick128" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 184, 392 )
-rotation = 1.5708
-
-[node name="Brick84" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 96, 448 )
-rotation = -1.5708
-
-[node name="Brick130" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 184, 448 )
-rotation = 1.5708
-
-[node name="Brick170" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 156, 448 )
-rotation = 1.5708
-
-[node name="Brick171" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 124, 448 )
-rotation = 1.5708
-
-[node name="Brick85" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 96, 504 )
-rotation = -1.5708
-
-[node name="Brick172" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 184, 504 )
-rotation = 1.5708
-
-[node name="Brick173" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 156, 504 )
-rotation = 1.5708
-
-[node name="Brick174" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 124, 504 )
-rotation = 1.5708
-
-[node name="Brick86" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 96, 560 )
-rotation = -1.5708
-
-[node name="Brick175" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 184, 560 )
-rotation = 1.5708
-
-[node name="Brick176" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 156, 560 )
-rotation = 1.5708
-
-[node name="Brick177" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 124, 560 )
-rotation = 1.5708
-
-[node name="Brick119" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 72 )
-
-[node name="Brick120" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 96 )
-
-[node name="Brick121" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 120 )
-
-[node name="Brick122" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 144 )
-
-[node name="Brick123" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 168 )
-
-[node name="Brick124" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 192 )
-
-[node name="Brick125" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 216 )
-
-[node name="Brick126" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 240 )
-
-[node name="Brick127" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 264 )
-
-[node name="Brick129" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 240, 300 )
-rotation = 1.5708
-
-[node name="Brick131" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 360 )
-
-[node name="Brick169" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 340 )
-
-[node name="Brick132" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 384 )
-
-[node name="Brick133" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 408 )
-
-[node name="Brick134" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 432 )
-
-[node name="Brick135" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 456 )
-
-[node name="Brick136" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 480 )
-
-[node name="Brick137" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 504 )
-
-[node name="Brick138" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 528 )
-
-[node name="Brick139" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 552 )
-
-[node name="Brick140" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 576 )
-
-[node name="Brick141" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 600 )
-
-[node name="Brick142" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 624 )
-
-[node name="Brick143" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 648 )
-
-[node name="Brick181" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 648 )
-
-[node name="Brick182" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 648 )
-
-[node name="Brick183" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 624 )
-
-[node name="Brick184" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 624 )
-
-[node name="Brick185" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 600 )
-
-[node name="Brick186" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 600 )
-
-[node name="Brick144" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 72 )
-
-[node name="Brick145" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 96 )
-
-[node name="Brick146" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 120 )
-
-[node name="Brick147" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 144 )
-
-[node name="Brick148" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 168 )
-
-[node name="Brick149" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 192 )
-
-[node name="Brick150" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 216 )
-
-[node name="Brick151" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 240 )
-
-[node name="Brick152" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 264 )
-
-[node name="Brick153" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 288 )
-
-[node name="Brick154" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 312 )
-
-[node name="Brick155" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 336 )
-
-[node name="Brick156" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 360 )
-
-[node name="Brick157" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 384 )
-
-[node name="Brick158" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 408 )
-
-[node name="Brick159" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 432 )
-
-[node name="Brick160" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 456 )
-
-[node name="Brick161" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 480 )
-
-[node name="Brick162" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 504 )
-
-[node name="Brick163" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 528 )
-
-[node name="Brick164" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 552 )
-
-[node name="Brick165" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 576 )
-
-[node name="Brick166" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 600 )
-
-[node name="Brick167" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 624 )
-
-[node name="Brick168" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 648 )
-
-[node name="Brick14" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 56, 48 )
-
-[node name="Brick15" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 112, 48 )
-
-[node name="Brick16" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 168, 48 )
-
-[node name="Brick17" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 224, 48 )
-
-[node name="Brick18" parent="RomanianFlagBlue" instance=ExtResource( 3 )]
-position = Vector2( 280, 48 )
-
-[node name="RomanianFlagColumn2" parent="." instance=ExtResource( 2 )]
-modulate = Color( 0.988235, 0.819608, 0.0862745, 1 )
-position = Vector2( 372, 16 )
-
-[node name="RomanianFlagColumn3" parent="." instance=ExtResource( 2 )]
-modulate = Color( 0.807843, 0.0666667, 0.14902, 1 )
-position = Vector2( 708, 16 )
-
-[node name="FCProgresulBucuresti" type="Position2D" parent="."]
-position = Vector2( 176, 328 )
-__meta__ = {
-"_edit_group_": true,
-"_gizmo_extents_": 270.0
-}
-
-[node name="Polygon2D" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( 0, 52 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-polygon = PoolVector2Array( -8, 32, 8, 32, 8, 0, 48, 0, 20, -24, -20, -24, -48, 0, -8, 0 )
-
-[node name="Polygon2D2" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( 0, -8 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-polygon = PoolVector2Array( -8, 32, 8, 32, 20, -8, -20, -8 )
-
-[node name="Polygon2D3" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( 0, -52 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-polygon = PoolVector2Array( -20, 32, 20, 32, 8, -8, -8, -8 )
-
-[node name="Polygon2D4" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( -32, -8 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-polygon = PoolVector2Array( -20, 32, 20, 32, 8, -8, -8, -8 )
-
-[node name="Polygon2D5" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( 32, -8 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-polygon = PoolVector2Array( -20, 32, 20, 32, 8, -8, -8, -8 )
-
-[node name="Polygon2D7" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( 0, -96 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-polygon = PoolVector2Array( -8, 32, 8, 32, 0, 8 )
-
-[node name="Polygon2D6" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( -56, -16 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-offset = Vector2( 12, -52 )
-polygon = PoolVector2Array( 20, 48, 32, 8, 0, -16 )
-
-[node name="Polygon2D9" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( -88, 28 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-offset = Vector2( 12, -52 )
-polygon = PoolVector2Array( 20, 48, 32, 8, 0, -16 )
-
-[node name="Polygon2D8" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( 44, -68 )
+[node name="1950sSoccerBallPanel4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 144, 272 )
 rotation = -3.14159
-scale = Vector2( 1, -1 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-polygon = PoolVector2Array( 20, 48, 32, 8, 0, -16 )
 
-[node name="Polygon2D10" type="Polygon2D" parent="FCProgresulBucuresti"]
-position = Vector2( 76, -24 )
+[node name="1950sSoccerBallPanel5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 96, 272 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 256, 160 )
 rotation = -3.14159
-scale = Vector2( 1, -1 )
-color = Color( 0.0784314, 0.52549, 0.286275, 1 )
-polygon = PoolVector2Array( 20, 48, 32, 8, 0, -16 )
+
+[node name="1950sSoccerBallPanel9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 208, 160 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 368, 48 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 320, 48 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 592, 48 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel24" parent="." instance=ExtResource( 1 )]
+position = Vector2( 544, 48 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 144, 48 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 96, 48 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 32, 160 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 232, 248 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 232, 296 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 120, 136 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 120, 184 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 816, 272 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel27" parent="." instance=ExtResource( 1 )]
+position = Vector2( 768, 272 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel43" parent="." instance=ExtResource( 1 )]
+position = Vector2( 992, 272 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel34" parent="." instance=ExtResource( 1 )]
+position = Vector2( 928, 160 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel37" parent="." instance=ExtResource( 1 )]
+position = Vector2( 880, 160 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel28" parent="." instance=ExtResource( 1 )]
+position = Vector2( 792, 136 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel33" parent="." instance=ExtResource( 1 )]
+position = Vector2( 792, 184 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel38" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1016, 136 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel39" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1016, 184 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel40" parent="." instance=ExtResource( 1 )]
+position = Vector2( 904, 248 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel41" parent="." instance=ExtResource( 1 )]
+position = Vector2( 904, 296 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 232, 24 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 232, 72 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 456, 24 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 456, 72 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 8, 24 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 8.00003, 72 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel26" parent="." instance=ExtResource( 1 )]
+position = Vector2( 992, 48 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel29" parent="." instance=ExtResource( 1 )]
+position = Vector2( 816, 48 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel30" parent="." instance=ExtResource( 1 )]
+position = Vector2( 768, 48 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel31" parent="." instance=ExtResource( 1 )]
+position = Vector2( 904, 24 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel32" parent="." instance=ExtResource( 1 )]
+position = Vector2( 904, 72 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel35" parent="." instance=ExtResource( 1 )]
+position = Vector2( 680, 24 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel36" parent="." instance=ExtResource( 1 )]
+position = Vector2( 680, 72 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel42" parent="." instance=ExtResource( 1 )]
+position = Vector2( 368, 496 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel44" parent="." instance=ExtResource( 1 )]
+position = Vector2( 320, 496 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel45" parent="." instance=ExtResource( 1 )]
+position = Vector2( 592, 496 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel46" parent="." instance=ExtResource( 1 )]
+position = Vector2( 544, 496 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel49" parent="." instance=ExtResource( 1 )]
+position = Vector2( 144, 496 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel50" parent="." instance=ExtResource( 1 )]
+position = Vector2( 96, 496 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel51" parent="." instance=ExtResource( 1 )]
+position = Vector2( 232, 472 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel52" parent="." instance=ExtResource( 1 )]
+position = Vector2( 232, 520 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel55" parent="." instance=ExtResource( 1 )]
+position = Vector2( 456, 472 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel62" parent="." instance=ExtResource( 1 )]
+position = Vector2( 456, 520 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel63" parent="." instance=ExtResource( 1 )]
+position = Vector2( 8, 472 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel64" parent="." instance=ExtResource( 1 )]
+position = Vector2( 8.00003, 520 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel65" parent="." instance=ExtResource( 1 )]
+position = Vector2( 992, 496 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel66" parent="." instance=ExtResource( 1 )]
+position = Vector2( 816, 496 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel67" parent="." instance=ExtResource( 1 )]
+position = Vector2( 768, 496 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel68" parent="." instance=ExtResource( 1 )]
+position = Vector2( 904, 472 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel69" parent="." instance=ExtResource( 1 )]
+position = Vector2( 904, 520 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel70" parent="." instance=ExtResource( 1 )]
+position = Vector2( 680, 472 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel71" parent="." instance=ExtResource( 1 )]
+position = Vector2( 680, 520 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel47" parent="." instance=ExtResource( 1 )]
+position = Vector2( 256, 384 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel72" parent="." instance=ExtResource( 1 )]
+position = Vector2( 32, 384 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel48" parent="." instance=ExtResource( 1 )]
+position = Vector2( 208, 384 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel53" parent="." instance=ExtResource( 1 )]
+position = Vector2( 120, 360 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel54" parent="." instance=ExtResource( 1 )]
+position = Vector2( 120, 408 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel56" parent="." instance=ExtResource( 1 )]
+position = Vector2( 928, 384 )
+rotation = -3.14159
+
+[node name="1950sSoccerBallPanel57" parent="." instance=ExtResource( 1 )]
+position = Vector2( 880, 384 )
+rotation = -6.28319
+
+[node name="1950sSoccerBallPanel58" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1016, 360 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel59" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1016, 408 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel60" parent="." instance=ExtResource( 1 )]
+position = Vector2( 792, 360 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel61" parent="." instance=ExtResource( 1 )]
+position = Vector2( 792, 408 )
+rotation = -1.5708
+
+[node name="1950sSoccerBallPanel6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 8, 248 )
+rotation = 1.5708
+
+[node name="1950sSoccerBallPanel7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 8.00003, 296 )
+rotation = -1.5708
