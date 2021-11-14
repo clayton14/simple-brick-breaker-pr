@@ -11,6 +11,11 @@ onready var current_level: Node
 
 
 func switch_to_level(new_level: PackedScene) -> void:
+	current_level.queue_free()
+	_start_level(new_level)
+
+
+func _start_level(new_level: PackedScene) -> void:
 	current_level = new_level.instance()
 	# The new level will contain physics objects, so we need to use
 	# call_deferred to prevent errors.
@@ -19,7 +24,7 @@ func switch_to_level(new_level: PackedScene) -> void:
 
 func _ready():
 	get_node("/root/StatCounter").ParentOfAllLevels = self
-	switch_to_level(preload("res://scenes_and_scripts/levels/level_2.tscn"))
+	_start_level(preload("res://scenes_and_scripts/levels/level_1.tscn"))
 
 
 func _on_Pit_body_entered(body: PhysicsBody2D) -> void:
@@ -29,7 +34,19 @@ func _on_Pit_body_entered(body: PhysicsBody2D) -> void:
 	if body is BallType and len(get_tree().get_nodes_in_group("Balls")) == 1:
 		Paddle.call_deferred("spawn_new_ball")
 	if Paddle.all_bricks_cleared():
-		Paddle.check_if_level_is_over()
+		var error_code = body.connect(
+				"tree_exited",
+				Paddle,
+				"check_if_level_is_over",
+				[],
+				CONNECT_ONESHOT
+		)
+		if error_code != OK:
+			push_error(
+					"Can’t check if the Ball that just fell out the bottom was "
+					+ "the last one. The player may have to release all of the "
+					+ "balls and recatch them to start the next level."
+			)
 
 
 func _on_Paddle_level_finished_balls_caught():
