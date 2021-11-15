@@ -32,8 +32,8 @@ config/icon="res://art/icon.webp"
 
 [autoload]
 
-GlobalRNG="*res://scenes_and_scripts/autoload/global_rng.tscn"
-StatCounter="*res://scenes_and_scripts/autoload/stat_counter.tscn"
+GlobalRNG="res://scenes_and_scripts/autoload/global_rng.tscn"
+StatCounter="res://scenes_and_scripts/autoload/stat_counter.tscn"
 
 [display]
 
