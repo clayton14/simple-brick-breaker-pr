@@ -34,6 +34,7 @@ config/icon="res://art/icon.webp"
 
 GlobalRNG="res://scenes_and_scripts/autoload/global_rng.tscn"
 StatCounter="res://scenes_and_scripts/autoload/stat_counter.tscn"
+EditorLevelLoader="res://scenes_and_scripts/autoload/editor_level_loader.tscn"
 
 [display]
 
