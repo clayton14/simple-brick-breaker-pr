@@ -5,10 +5,17 @@ extends RigidBody2D
 
 
 signal broken
+const GlobalRNGType: Script = preload("res://scenes_and_scripts/autoload/global_rng.gd")
 const FALL_COLLISION_LAYER: int  = 4
+export(bool) var random_color_variation := false
+export(float) var value_max := 1.0
+export(float) var value_min := 60.0/255.0
 
 
 func _ready() -> void:
+	if random_color_variation:
+		var GlobalRNG: GlobalRNGType = get_node("/root/GlobalRNG")
+		modulate.v = GlobalRNG.randf_range(value_min, value_max)
 	var StatCounter = get_node("/root/StatCounter")
 	var error_code: int = connect("broken", StatCounter, "on_Brick_broken", [self])
 	if error_code != OK:

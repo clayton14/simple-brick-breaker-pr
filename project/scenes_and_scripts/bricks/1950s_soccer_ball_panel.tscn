@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes_and_scripts/bricks/base_brick.tscn" type="PackedScene" id=1]
 [ext_resource path="res://art/1950s_soccer_ball_panel.svg" type="Texture" id=2]
-[ext_resource path="res://scenes_and_scripts/bricks/1950s_soccer_ball_panel.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 24.0
@@ -11,7 +10,7 @@ radius = 24.0
 extents = Vector2( 18, 52 )
 
 [node name="1950sSoccerBallPanel" instance=ExtResource( 1 )]
-script = ExtResource( 3 )
+random_color_variation = true
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 texture = ExtResource( 2 )

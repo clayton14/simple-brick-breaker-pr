@@ -1,0 +1,1070 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes_and_scripts/levels/base_level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://art/malcolm_nebraska_lincoln_street_1.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes_and_scripts/bricks/rectangle.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 512, 112 )
+
+[node name="Level4" instance=ExtResource( 1 )]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+visible = false
+position = Vector2( 12, 384 )
+scale = Vector2( 0.413, 0.413 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( 0, -924 )
+__meta__ = {
+"SPDX Metadata": "
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: OTHER
+",
+"_edit_lock_": true
+}
+
+[node name="Rectangle85" parent="." index="1" instance=ExtResource( 3 )]
+modulate = Color( 0.490196, 0.658824, 0.858824, 1 )
+position = Vector2( 24, 8 )
+
+[node name="CollisionShape2D" parent="Rectangle85" index="0"]
+position = Vector2( 488, 104 )
+shape = SubResource( 1 )
+
+[node name="Polygon2D" parent="Rectangle85" index="1"]
+polygon = PoolVector2Array( -24, 216, -24, -8, 1000, -8, 1000, 216 )
+
+[node name="Rectangle" parent="." index="2" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 36, 376 )
+rotation = -0.523599
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle18" parent="." index="3" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 80, 344 )
+rotation = -0.523599
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle35" parent="." index="4" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 120, 312 )
+rotation = -0.523599
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle55" parent="." index="5" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 160, 280 )
+rotation = -0.523599
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle2" parent="." index="6" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 92, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle3" parent="." index="7" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 148, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle4" parent="." index="8" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 204, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle5" parent="." index="9" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 260, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle6" parent="." index="10" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 316, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle7" parent="." index="11" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 372, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle8" parent="." index="12" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 428, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle9" parent="." index="13" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 484, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle10" parent="." index="14" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 540, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle11" parent="." index="15" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 596, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle12" parent="." index="16" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 652, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle13" parent="." index="17" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 708, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle14" parent="." index="18" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 764, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle15" parent="." index="19" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 820, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle16" parent="." index="20" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 876, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle17" parent="." index="21" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 932, 376 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle34" parent="." index="22" instance=ExtResource( 3 )]
+position = Vector2( 36, 328 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle36" parent="." index="23" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 148, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle37" parent="." index="24" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 204, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle38" parent="." index="25" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 260, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle39" parent="." index="26" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 316, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle40" parent="." index="27" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 372, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle41" parent="." index="28" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 428, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle42" parent="." index="29" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 484, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle43" parent="." index="30" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 540, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle44" parent="." index="31" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 596, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle45" parent="." index="32" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 652, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle46" parent="." index="33" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 708, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle47" parent="." index="34" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 764, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle48" parent="." index="35" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 820, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle49" parent="." index="36" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 876, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle50" parent="." index="37" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 932, 328 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle72" parent="." index="38" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 260, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle73" parent="." index="39" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 316, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle74" parent="." index="40" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 372, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle75" parent="." index="41" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 428, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle76" parent="." index="42" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 484, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle77" parent="." index="43" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 540, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle78" parent="." index="44" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 596, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle79" parent="." index="45" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 652, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle106" parent="." index="46" instance=ExtResource( 3 )]
+modulate = Color( 0.74902, 0.0745098, 0.156863, 1 )
+position = Vector2( 428, 232 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle118" parent="." index="47" instance=ExtResource( 3 )]
+modulate = Color( 0.74902, 0.0745098, 0.156863, 1 )
+position = Vector2( 372, 232 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle126" parent="." index="48" instance=ExtResource( 3 )]
+modulate = Color( 0.74902, 0.0745098, 0.156863, 1 )
+position = Vector2( 344, 208 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle119" parent="." index="49" instance=ExtResource( 3 )]
+modulate = Color( 0.74902, 0.0745098, 0.156863, 1 )
+position = Vector2( 316, 232 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle120" parent="." index="50" instance=ExtResource( 3 )]
+position = Vector2( 260, 232 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle121" parent="." index="51" instance=ExtResource( 3 )]
+modulate = Color( 0.333333, 0.32549, 0.337255, 1 )
+position = Vector2( 204, 232 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle122" parent="." index="52" instance=ExtResource( 3 )]
+modulate = Color( 0.47451, 0.552941, 0.647059, 1 )
+position = Vector2( 144, 216 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle127" parent="." index="53" instance=ExtResource( 3 )]
+modulate = Color( 0.47451, 0.552941, 0.647059, 1 )
+position = Vector2( 144, 160 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle128" parent="." index="54" instance=ExtResource( 3 )]
+modulate = Color( 0.866667, 0.854902, 0.819608, 1 )
+position = Vector2( 120, 216 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle129" parent="." index="55" instance=ExtResource( 3 )]
+modulate = Color( 0.866667, 0.854902, 0.819608, 1 )
+position = Vector2( 120, 160 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle130" parent="." index="56" instance=ExtResource( 3 )]
+modulate = Color( 0.866667, 0.854902, 0.819608, 1 )
+position = Vector2( 96, 216 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle131" parent="." index="57" instance=ExtResource( 3 )]
+modulate = Color( 0.866667, 0.854902, 0.819608, 1 )
+position = Vector2( 96, 160 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle123" parent="." index="58" instance=ExtResource( 3 )]
+modulate = Color( 0.47451, 0.552941, 0.647059, 1 )
+position = Vector2( 72, 216 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle124" parent="." index="59" instance=ExtResource( 3 )]
+modulate = Color( 0.47451, 0.552941, 0.647059, 1 )
+position = Vector2( 72, 160 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle157" parent="." index="60" instance=ExtResource( 3 )]
+modulate = Color( 0.47451, 0.552941, 0.647059, 1 )
+position = Vector2( 92, 120 )
+rotation = 2.87979
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle132" parent="." index="61" instance=ExtResource( 3 )]
+modulate = Color( 0.72549, 0.729412, 0.729412, 1 )
+position = Vector2( 48, 216 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle133" parent="." index="62" instance=ExtResource( 3 )]
+modulate = Color( 0.72549, 0.729412, 0.729412, 1 )
+position = Vector2( 48, 160 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle134" parent="." index="63" instance=ExtResource( 3 )]
+modulate = Color( 0.364706, 0.317647, 0.317647, 1 )
+position = Vector2( 16, 216 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle135" parent="." index="64" instance=ExtResource( 3 )]
+modulate = Color( 0.364706, 0.317647, 0.317647, 1 )
+position = Vector2( 16, 160 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle107" parent="." index="65" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 484, 232 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle108" parent="." index="66" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 540, 232 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle109" parent="." index="67" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 596, 232 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle110" parent="." index="68" instance=ExtResource( 3 )]
+modulate = Color( 0.329412, 0.305882, 0.203922, 1 )
+position = Vector2( 652, 232 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle112" parent="." index="69" instance=ExtResource( 3 )]
+modulate = Color( 0.329412, 0.305882, 0.203922, 1 )
+position = Vector2( 708, 232 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle113" parent="." index="70" instance=ExtResource( 3 )]
+modulate = Color( 0.352941, 0.352941, 0.317647, 1 )
+position = Vector2( 764, 232 )
+rotation = -0.785398
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle114" parent="." index="71" instance=ExtResource( 3 )]
+modulate = Color( 0.329412, 0.305882, 0.203922, 1 )
+position = Vector2( 820, 232 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle115" parent="." index="72" instance=ExtResource( 3 )]
+modulate = Color( 0.443137, 0.34902, 0.380392, 1 )
+position = Vector2( 876, 232 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle116" parent="." index="73" instance=ExtResource( 3 )]
+modulate = Color( 0.443137, 0.34902, 0.380392, 1 )
+position = Vector2( 932, 232 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle117" parent="." index="74" instance=ExtResource( 3 )]
+position = Vector2( 988, 232 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle148" parent="." index="75" instance=ExtResource( 3 )]
+position = Vector2( 1000, 208 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle149" parent="." index="76" instance=ExtResource( 3 )]
+position = Vector2( 1000, 184 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle150" parent="." index="77" instance=ExtResource( 3 )]
+position = Vector2( 1000, 160 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle151" parent="." index="78" instance=ExtResource( 3 )]
+position = Vector2( 1000, 136 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle152" parent="." index="79" instance=ExtResource( 3 )]
+position = Vector2( 1000, 112 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle153" parent="." index="80" instance=ExtResource( 3 )]
+modulate = Color( 0.345098, 0.247059, 0.258824, 1 )
+position = Vector2( 928, 120 )
+rotation = -0.261799
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle154" parent="." index="81" instance=ExtResource( 3 )]
+modulate = Color( 0.345098, 0.247059, 0.258824, 1 )
+position = Vector2( 880, 136 )
+rotation = -0.261799
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle142" parent="." index="82" instance=ExtResource( 3 )]
+position = Vector2( 932, 144 )
+rotation = -0.261799
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle136" parent="." index="83" instance=ExtResource( 3 )]
+modulate = Color( 0.2, 0.0941176, 0.105882, 1 )
+position = Vector2( 896, 224 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle144" parent="." index="84" instance=ExtResource( 3 )]
+modulate = Color( 0.462745, 0.352941, 0.372549, 1 )
+position = Vector2( 964, 192 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle146" parent="." index="85" instance=ExtResource( 3 )]
+modulate = Color( 0.282353, 0.321569, 0.317647, 1 )
+position = Vector2( 944, 184 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle147" parent="." index="86" instance=ExtResource( 3 )]
+modulate = Color( 0.207843, 0.203922, 0.196078, 1 )
+position = Vector2( 920, 184 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle145" parent="." index="87" instance=ExtResource( 3 )]
+modulate = Color( 0.462745, 0.352941, 0.372549, 1 )
+position = Vector2( 964, 136 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle138" parent="." index="88" instance=ExtResource( 3 )]
+modulate = Color( 0.2, 0.0941176, 0.105882, 1 )
+position = Vector2( 872, 224 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle139" parent="." index="89" instance=ExtResource( 3 )]
+modulate = Color( 0.2, 0.0941176, 0.105882, 1 )
+position = Vector2( 872, 168 )
+rotation = -1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle140" parent="." index="90" instance=ExtResource( 3 )]
+modulate = Color( 0.203922, 0.109804, 0.109804, 1 )
+position = Vector2( 844, 192 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle141" parent="." index="91" instance=ExtResource( 3 )]
+modulate = Color( 0.211765, 0.117647, 0.101961, 1 )
+position = Vector2( 820, 200 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle137" parent="." index="92" instance=ExtResource( 3 )]
+modulate = Color( 0.2, 0.0941176, 0.105882, 1 )
+position = Vector2( 896, 168 )
+rotation = 1.5708
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle111" parent="." index="93" instance=ExtResource( 3 )]
+modulate = Color( 0.0666667, 0.0705882, 0.0784314, 1 )
+position = Vector2( 624, 224 )
+rotation = 1.0472
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle80" parent="." index="94" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 708, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle81" parent="." index="95" instance=ExtResource( 3 )]
+modulate = Color( 0.313726, 0.286275, 0.184314, 1 )
+position = Vector2( 764, 280 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle82" parent="." index="96" instance=ExtResource( 3 )]
+modulate = Color( 0.184314, 0.188235, 0.168627, 1 )
+position = Vector2( 820, 280 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle83" parent="." index="97" instance=ExtResource( 3 )]
+modulate = Color( 0.470588, 0.396078, 0.368627, 1 )
+position = Vector2( 876, 280 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle84" parent="." index="98" instance=ExtResource( 3 )]
+modulate = Color( 0.470588, 0.396078, 0.368627, 1 )
+position = Vector2( 932, 280 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle88" parent="." index="99" instance=ExtResource( 3 )]
+modulate = Color( 0.470588, 0.396078, 0.368627, 1 )
+position = Vector2( 988, 280 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle19" parent="." index="100" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 120, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle20" parent="." index="101" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 176, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle21" parent="." index="102" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 232, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle22" parent="." index="103" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 288, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle23" parent="." index="104" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 344, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle24" parent="." index="105" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 400, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle25" parent="." index="106" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 456, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle26" parent="." index="107" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 512, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle27" parent="." index="108" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 568, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle28" parent="." index="109" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 624, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle29" parent="." index="110" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 680, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle30" parent="." index="111" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 736, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle31" parent="." index="112" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 792, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle32" parent="." index="113" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 848, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle33" parent="." index="114" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 904, 352 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle51" parent="." index="115" instance=ExtResource( 3 )]
+modulate = Color( 0.0823529, 0.0901961, 0.109804, 1 )
+position = Vector2( 988, 376 )
+
+[node name="Rectangle53" parent="." index="116" instance=ExtResource( 3 )]
+modulate = Color( 0.584314, 0.568627, 0.552941, 1 )
+position = Vector2( 988, 328 )
+
+[node name="Rectangle52" parent="." index="117" instance=ExtResource( 3 )]
+modulate = Color( 0.0784314, 0.0784314, 0.0705882, 1 )
+position = Vector2( 960, 352 )
+
+[node name="Rectangle54" parent="." index="118" instance=ExtResource( 3 )]
+position = Vector2( 64, 304 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle56" parent="." index="119" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 176, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle71" parent="." index="120" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 208, 280 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle57" parent="." index="121" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 232, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle58" parent="." index="122" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 288, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle59" parent="." index="123" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 344, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle60" parent="." index="124" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 400, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle61" parent="." index="125" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 456, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle62" parent="." index="126" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 512, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle63" parent="." index="127" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 568, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle64" parent="." index="128" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 624, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle65" parent="." index="129" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 680, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle66" parent="." index="130" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 736, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle67" parent="." index="131" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 792, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle68" parent="." index="132" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 848, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle69" parent="." index="133" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 904, 304 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle70" parent="." index="134" instance=ExtResource( 3 )]
+modulate = Color( 0.290196, 0.286275, 0.207843, 1 )
+position = Vector2( 960, 304 )
+
+[node name="Rectangle89" parent="." index="135" instance=ExtResource( 3 )]
+modulate = Color( 0.611765, 0.580392, 0.552941, 1 )
+position = Vector2( 64, 256 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle90" parent="." index="136" instance=ExtResource( 3 )]
+modulate = Color( 0.611765, 0.580392, 0.552941, 1 )
+position = Vector2( 120, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle93" parent="." index="137" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 288, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle155" parent="." index="138" instance=ExtResource( 3 )]
+modulate = Color( 0.611765, 0.580392, 0.552941, 1 )
+position = Vector2( 232, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle156" parent="." index="139" instance=ExtResource( 3 )]
+modulate = Color( 0.611765, 0.580392, 0.552941, 1 )
+position = Vector2( 176, 256 )
+rotation = -3.14159
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle94" parent="." index="140" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 344, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle95" parent="." index="141" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 400, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle125" parent="." index="142" instance=ExtResource( 3 )]
+modulate = Color( 0.184314, 0.231373, 0.254902, 1 )
+position = Vector2( 400, 208 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle96" parent="." index="143" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 456, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle97" parent="." index="144" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 512, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle98" parent="." index="145" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 568, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle99" parent="." index="146" instance=ExtResource( 3 )]
+modulate = Color( 0.682353, 0.631373, 0.596078, 1 )
+position = Vector2( 624, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle100" parent="." index="147" instance=ExtResource( 3 )]
+position = Vector2( 680, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle101" parent="." index="148" instance=ExtResource( 3 )]
+modulate = Color( 0.631373, 0.501961, 0.396078, 1 )
+position = Vector2( 736, 256 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle102" parent="." index="149" instance=ExtResource( 3 )]
+modulate = Color( 0.631373, 0.501961, 0.396078, 1 )
+position = Vector2( 792, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle103" parent="." index="150" instance=ExtResource( 3 )]
+modulate = Color( 0.631373, 0.501961, 0.396078, 1 )
+position = Vector2( 848, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle104" parent="." index="151" instance=ExtResource( 3 )]
+modulate = Color( 0.631373, 0.501961, 0.396078, 1 )
+position = Vector2( 904, 256 )
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle105" parent="." index="152" instance=ExtResource( 3 )]
+modulate = Color( 0.631373, 0.501961, 0.396078, 1 )
+position = Vector2( 960, 256 )
+random_color_variation = true
+value_max = 0.733
+value_min = 0.447
+
+[node name="Rectangle86" parent="." index="153" instance=ExtResource( 3 )]
+position = Vector2( 92, 280 )
+
+[node name="Rectangle87" parent="." index="154" instance=ExtResource( 3 )]
+position = Vector2( 36, 280 )
+
+[node name="Rectangle91" parent="." index="155" instance=ExtResource( 3 )]
+modulate = Color( 0.796078, 0.768627, 0.694118, 1 )
+position = Vector2( 36, 112 )
+
+[node name="Rectangle143" parent="." index="156" instance=ExtResource( 3 )]
+position = Vector2( 840, 160 )
+rotation = -0.261799
+value_max = 0.733
+value_min = 0.447
+
+[editable path="Rectangle85"]
