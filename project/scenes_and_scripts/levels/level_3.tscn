@@ -1,0 +1,280 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://scenes_and_scripts/bricks/rectangle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes_and_scripts/bricks/square.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes_and_scripts/bricks/base_brick.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes_and_scripts/bricks/pillow.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes_and_scripts/bricks/flags/england/flag_of_england.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes_and_scripts/bricks/flags/scotland/flag_of_scotland.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes_and_scripts/bricks/flags/ireland/flag_of_ireland.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes_and_scripts/bricks/roman_numerals/i.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes_and_scripts/bricks/roman_numerals/iii.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes_and_scripts/bricks/roman_numerals/v.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes_and_scripts/levels/base_level.gd" type="Script" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 80, 14 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 80, 12 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 24, 8 )
+
+[node name="Level3" type="Node"]
+script = ExtResource( 11 )
+__meta__ = {
+"SPDX Metadata": "
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: OTHER
+"
+}
+
+[node name="PurpleCloth" parent="." instance=ExtResource( 3 )]
+position = Vector2( 832, 320 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PurpleCloth"]
+polygon = PoolVector2Array( -80, 32, -80, -16, -56, -40, 56, -40, 80, -16, 80, 32 )
+
+[node name="Polygon2D" type="Polygon2D" parent="PurpleCloth"]
+color = Color( 0.282353, 0.156863, 0.270588, 1 )
+antialiased = true
+polygon = PoolVector2Array( -80, 32, -80, -16, -56, -40, 56, -40, 80, -16, 80, 32 )
+
+[node name="Rectangle" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.690196, 0.592157, 0.309804, 1 )
+position = Vector2( 832, 368 )
+
+[node name="CollisionShape2D" parent="Rectangle" index="0"]
+position = Vector2( 0, 2 )
+shape = SubResource( 1 )
+
+[node name="Polygon2D" parent="Rectangle" index="1"]
+polygon = PoolVector2Array( -80, 16, -80, -16, 80, -16, 80, 16 )
+
+[node name="Rectangle2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 832, 400 )
+
+[node name="CollisionShape2D" parent="Rectangle2" index="0"]
+position = Vector2( 0, -4 )
+shape = SubResource( 2 )
+
+[node name="Polygon2D" parent="Rectangle2" index="1"]
+polygon = PoolVector2Array( -80, 8, -80, -16, 80, -16, 80, 8 )
+
+[node name="Square" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.14902, 0.254902, 0.0705882, 1 )
+position = Vector2( 832, 368 )
+
+[node name="Square2" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.94902, 0.94902, 0.917647, 1 )
+position = Vector2( 864, 368 )
+
+[node name="Square7" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.447059, 0.12549, 0.0980392, 1 )
+position = Vector2( 832, 320 )
+
+[node name="Square3" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.239216, 0.164706, 0.239216, 1 )
+position = Vector2( 800, 368 )
+
+[node name="Square4" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.2, 0.262745, 0.215686, 1 )
+position = Vector2( 896, 368 )
+
+[node name="Square5" parent="." instance=ExtResource( 2 )]
+modulate = Color( 0.2, 0.262745, 0.215686, 1 )
+position = Vector2( 768, 368 )
+
+[node name="Trapezoid" parent="." instance=ExtResource( 3 )]
+position = Vector2( 832, 328 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Trapezoid"]
+polygon = PoolVector2Array( -16, 24, -8, 0, 8, 0, 16, 24 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Trapezoid"]
+color = Color( 0.690196, 0.592157, 0.309804, 1 )
+antialiased = true
+polygon = PoolVector2Array( -16, 24, -8, 0, 8, 0, 16, 24 )
+
+[node name="Trapezoid2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 824, 320 )
+rotation = 1.5708
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Trapezoid2"]
+polygon = PoolVector2Array( -16, 24, -8, 0, 8, 0, 16, 24 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Trapezoid2"]
+color = Color( 0.690196, 0.592157, 0.309804, 1 )
+antialiased = true
+polygon = PoolVector2Array( -16, 24, -8, 0, 8, 0, 16, 24 )
+
+[node name="Trapezoid3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 840, 320 )
+rotation = -1.5708
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Trapezoid3"]
+polygon = PoolVector2Array( -16, 24, -8, 0, 8, 0, 16, 24 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Trapezoid3"]
+color = Color( 0.690196, 0.592157, 0.309804, 1 )
+antialiased = true
+polygon = PoolVector2Array( -16, 24, -8, 0, 8, 0, 16, 24 )
+
+[node name="Trapezoid4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 832, 312 )
+rotation = 3.14159
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Trapezoid4"]
+polygon = PoolVector2Array( -16, 24, -8, 0, 8, 0, 16, 24 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Trapezoid4"]
+color = Color( 0.690196, 0.592157, 0.309804, 1 )
+antialiased = true
+polygon = PoolVector2Array( -16, 24, -8, 0, 8, 0, 16, 24 )
+
+[node name="Pillow" parent="." instance=ExtResource( 4 )]
+modulate = Color( 0.47451, 0.0745098, 0.0745098, 1 )
+position = Vector2( 832, 448 )
+
+[node name="Pillow2" parent="." instance=ExtResource( 4 )]
+modulate = Color( 0.188235, 0.0745098, 0.47451, 1 )
+position = Vector2( 192, 448 )
+
+[node name="Arm" type="Node2D" parent="."]
+position = Vector2( 704, 260 )
+rotation = 0.261799
+
+[node name="Rectangle10" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+rotation = -1.5708
+
+[node name="Rectangle9" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( 24, -32 )
+rotation = -0.523599
+
+[node name="Rectangle8" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( 72, -48 )
+
+[node name="Rectangle7" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( -40, -16 )
+
+[node name="Rectangle6" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( -40, 8 )
+
+[node name="Rectangle5" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( -96, -16 )
+
+[node name="Rectangle4" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( -96, 8 )
+
+[node name="Rectangle3" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( -152, -16 )
+
+[node name="Rectangle2" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( -152, 8 )
+
+[node name="Rectangle" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.956863, 0.815686, 0.682353, 1 )
+position = Vector2( 24, 32 )
+rotation = 0.523599
+
+[node name="Rectangle11" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.341176, 0.341176, 0.341176, 1 )
+position = Vector2( -28, 0 )
+rotation = 1.5708
+
+[node name="CollisionShape2D" parent="Arm/Rectangle11" index="0"]
+position = Vector2( -4, 0 )
+shape = SubResource( 3 )
+
+[node name="Polygon2D" parent="Arm/Rectangle11" index="1"]
+polygon = PoolVector2Array( -28, 8, -28, -8, 20, -8, 20, 8 )
+
+[node name="Rectangle12" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.341176, 0.341176, 0.341176, 1 )
+position = Vector2( -40.9105, 48.2319 )
+rotation = -1.0472
+
+[node name="Rectangle13" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.341176, 0.341176, 0.341176, 1 )
+position = Vector2( -80.0281, 87.7011 )
+rotation = -0.523599
+
+[node name="Rectangle14" parent="Arm" instance=ExtResource( 1 )]
+modulate = Color( 0.341176, 0.341176, 0.341176, 1 )
+position = Vector2( -132.049, 109.922 )
+rotation = -0.261799
+
+[node name="FlagOfEngland" parent="." instance=ExtResource( 5 )]
+position = Vector2( 92, 496 )
+
+[node name="I" parent="FlagOfEngland" instance=ExtResource( 8 )]
+position = Vector2( 72, 60 )
+
+[node name="I2" parent="FlagOfEngland" instance=ExtResource( 8 )]
+position = Vector2( 128, 60 )
+
+[node name="FlagOfScotland" parent="." instance=ExtResource( 6 )]
+position = Vector2( 92, 632 )
+
+[node name="V" parent="FlagOfScotland" instance=ExtResource( 10 )]
+position = Vector2( 48, 60 )
+
+[node name="III" parent="FlagOfScotland" instance=ExtResource( 9 )]
+position = Vector2( 144, 60 )
+
+[node name="FlagOfIreland" parent="." instance=ExtResource( 7 )]
+position = Vector2( 92, 768 )
+
+[node name="I" parent="FlagOfIreland" instance=ExtResource( 8 )]
+position = Vector2( 72, 60 )
+
+[node name="I2" parent="FlagOfIreland" instance=ExtResource( 8 )]
+position = Vector2( 128, 60 )
+
+[node name="FlagOfEngland2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 732, 496 )
+
+[node name="I" parent="FlagOfEngland2" instance=ExtResource( 8 )]
+position = Vector2( 100, 60 )
+
+[node name="I2" parent="FlagOfEngland2" instance=ExtResource( 8 )]
+position = Vector2( 44, 60 )
+
+[node name="I3" parent="FlagOfEngland2" instance=ExtResource( 8 )]
+position = Vector2( 156, 60 )
+
+[node name="FlagOfScotland2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 732, 632 )
+
+[node name="I" parent="FlagOfScotland2" instance=ExtResource( 8 )]
+position = Vector2( 72, 60 )
+
+[node name="I2" parent="FlagOfScotland2" instance=ExtResource( 8 )]
+position = Vector2( 128, 60 )
+
+[node name="FlagOfIreland2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 732, 768 )
+
+[node name="I" parent="FlagOfIreland2" instance=ExtResource( 8 )]
+position = Vector2( 100, 60 )
+
+[node name="I2" parent="FlagOfIreland2" instance=ExtResource( 8 )]
+position = Vector2( 44, 60 )
+
+[node name="I3" parent="FlagOfIreland2" instance=ExtResource( 8 )]
+position = Vector2( 156, 60 )
+
+[editable path="Rectangle"]
+[editable path="Rectangle2"]
+[editable path="Arm/Rectangle11"]

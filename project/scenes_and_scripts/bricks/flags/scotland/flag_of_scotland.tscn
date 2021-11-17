@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes_and_scripts/bricks/base_brick.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes_and_scripts/bricks/flags/scotland/vertical_triangle.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes_and_scripts/bricks/flags/scotland/horizontal_triangle.tscn" type="PackedScene" id=4]
+
+[node name="FlagOfScotland" type="Node2D"]
+__meta__ = {
+"SPDX Metadata": "
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: OTHER
+",
+"_edit_group_": true
+}
+
+[node name="Cross" parent="." instance=ExtResource( 2 )]
+
+[node name="Polygon2D" type="Polygon2D" parent="Cross"]
+antialiased = true
+polygon = PoolVector2Array( 0, 0, 24, 0, 100, 46, 176, 0, 200, 0, 200, 14, 123, 60, 200, 106, 200, 120, 176, 120, 100, 74, 24, 120, 0, 120, 0, 106, 77, 60, 0, 14 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Cross"]
+polygon = PoolVector2Array( 0, 0, 24, 0, 100, 46, 176, 0, 200, 0, 200, 14, 123, 60, 200, 106, 200, 120, 176, 120, 100, 74, 24, 120, 0, 120, 0, 106, 77, 60, 0, 14 )
+
+[node name="VerticalTriangle" parent="." instance=ExtResource( 3 )]
+position = Vector2( 100, 46 )
+
+[node name="VerticalTriangle2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 100, 74 )
+rotation = -3.14159
+
+[node name="HorizontalTriangle" parent="." instance=ExtResource( 4 )]
+position = Vector2( 77, 60 )
+
+[node name="HorizontalTriangle2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 123, 60 )
+rotation = -3.14159

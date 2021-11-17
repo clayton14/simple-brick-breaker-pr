@@ -17,6 +17,7 @@ SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
 SPDX-FileType: OTHER
 "
 }
+next_level_path = "res://scenes_and_scripts/levels/level_2.tscn"
 
 [node name="Rotator" type="Node2D" parent="."]
 position = Vector2( 512, 472 )
@@ -59,6 +60,7 @@ velocity_degrees = -4.0
 [node name="Goal" parent="Rotator2" instance=ExtResource( 5 )]
 
 [node name="Polygon2D" type="Polygon2D" parent="Rotator2/Goal"]
+antialiased = true
 polygon = PoolVector2Array( -56, 0, 0, -56, 56, 0, 0, 56 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Rotator2/Goal"]

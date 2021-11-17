@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes_and_scripts/bricks/base_brick.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 128, 8 )
+
+[node name="Pillow" type="Node2D"]
+position = Vector2( 512, 400 )
+__meta__ = {
+"SPDX Metadata": "
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: OTHER
+"
+}
+
+[node name="Top" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -8 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Top"]
+antialiased = true
+polygon = PoolVector2Array( -96, -24, -128, 0, 128, 0, 96, -24 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Top"]
+visible = false
+polygon = PoolVector2Array( -128, 0, -96, -24, 96, -24, 128, 0 )
+
+[node name="Middle" parent="." instance=ExtResource( 2 )]
+
+[node name="Polygon2D" type="Polygon2D" parent="Middle"]
+position = Vector2( 0, -8 )
+polygon = PoolVector2Array( -128, 0, -128, 16, 128, 16, 128, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Middle"]
+visible = false
+shape = SubResource( 3 )
+
+[node name="Bottom" parent="." instance=ExtResource( 2 )]
+
+[node name="Polygon2D" type="Polygon2D" parent="Bottom"]
+position = Vector2( 0, -8 )
+antialiased = true
+polygon = PoolVector2Array( -128, 16, -96, 40, 96, 40, 128, 16 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bottom"]
+visible = false
+polygon = PoolVector2Array( -128, 8, -96, 32, 96, 32, 128, 8 )

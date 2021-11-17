@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes_and_scripts/bricks/base_brick.tscn" type="PackedScene" id=1]
+
+[node name="HorizontalTriangle" instance=ExtResource( 1 )]
+modulate = Color( 0, 0.368627, 0.721569, 1 )
+
+[node name="Polygon2D" type="Polygon2D" parent="." index="0"]
+antialiased = true
+polygon = PoolVector2Array( -77, -46, 0, 0, -77, 46 )
+__meta__ = {
+"SPDX Metadata": "
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: OTHER
+"
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+polygon = PoolVector2Array( 0, 0, -77, -46, -77, 46 )

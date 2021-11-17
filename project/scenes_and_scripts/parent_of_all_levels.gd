@@ -5,6 +5,7 @@ extends Node
 class_name ParentOfAllLevelsType
 
 
+const BaseLevel: Script = preload("res://scenes_and_scripts/levels/base_level.gd")
 const PaddleType: Script = preload("res://scenes_and_scripts/paddle.gd")
 onready var Paddle: PaddleType = $Paddle
 onready var current_level: Node
@@ -50,4 +51,4 @@ func _on_Pit_body_entered(body: PhysicsBody2D) -> void:
 
 
 func _on_Paddle_level_finished_balls_caught():
-	switch_to_level(preload("res://scenes_and_scripts/levels/level_2.tscn"))
+	switch_to_level(load(current_level.next_level_path))

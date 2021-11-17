@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes_and_scripts/bricks/rectangle.tscn" type="PackedScene" id=2]
+
+[node name="I" type="Node2D"]
+modulate = Color( 0.341176, 0.341176, 0.341176, 1 )
+__meta__ = {
+"SPDX Metadata": "
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: OTHER
+"
+}
+
+[node name="Rectangle" parent="." instance=ExtResource( 2 )]
+rotation = 1.5708
+
+[node name="Rectangle2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -32 )
+
+[node name="Rectangle3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, 32 )

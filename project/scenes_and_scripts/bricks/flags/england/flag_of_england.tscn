@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes_and_scripts/bricks/base_brick.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes_and_scripts/bricks/flags/england/quarter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 100, 12 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 12, 60 )
+
+[node name="FlagOfEngland" type="Node2D"]
+__meta__ = {
+"SPDX Metadata": "
+SPDX-FileNotice: 🅭🄍1.0 This file was dedicated to the public domain using the CC0 1.0 Universal Public Domain Dedication <https://creativecommons.org/publicdomain/zero/1.0/>.
+SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
+SPDX-FileType: OTHER
+",
+"_edit_group_": true
+}
+
+[node name="Quarter" parent="." instance=ExtResource( 3 )]
+
+[node name="Quarter2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 112, 0 )
+
+[node name="Quarter3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 0, 72 )
+
+[node name="Quarter4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 112, 72 )
+
+[node name="Cross" parent="." instance=ExtResource( 2 )]
+
+[node name="Polygon2D" type="Polygon2D" parent="Cross"]
+color = Color( 0.807843, 0.0666667, 0.141176, 1 )
+polygon = PoolVector2Array( 0, 48, 88, 48, 88, 0, 112, 0, 112, 48, 200, 48, 200, 72, 112, 72, 112, 120, 88, 120, 88, 72, 0, 72 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cross"]
+position = Vector2( 100, 60 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cross"]
+position = Vector2( 100, 60 )
+shape = SubResource( 4 )
