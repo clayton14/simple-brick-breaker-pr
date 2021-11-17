@@ -30,6 +30,7 @@ SPDX-FileContributor: Jason Yundt <swagfortress@gmail.com> (2021)
 SPDX-FileType: OTHER
 "
 }
+next_level_path = "res://scenes_and_scripts/levels/level_5.tscn"
 
 [node name="PurpleCloth" parent="." instance=ExtResource( 3 )]
 position = Vector2( 832, 320 )

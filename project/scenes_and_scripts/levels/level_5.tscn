@@ -1,0 +1,93 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes_and_scripts/levels/base_level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes_and_scripts/bricks/undisclosed_editing.tscn" type="PackedScene" id=2]
+
+[node name="Level5" instance=ExtResource( 1 )]
+
+[node name="UndisclosedEditing" parent="." index="0" instance=ExtResource( 2 )]
+position = Vector2( 128, 128 )
+color_index = 4
+
+[node name="UndisclosedEditing2" parent="." index="1" instance=ExtResource( 2 )]
+position = Vector2( 320, 128 )
+color_index = 4
+
+[node name="UndisclosedEditing3" parent="." index="2" instance=ExtResource( 2 )]
+position = Vector2( 512, 128 )
+color_index = 4
+
+[node name="UndisclosedEditing4" parent="." index="3" instance=ExtResource( 2 )]
+position = Vector2( 704, 128 )
+color_index = 4
+
+[node name="UndisclosedEditing5" parent="." index="4" instance=ExtResource( 2 )]
+position = Vector2( 896, 128 )
+color_index = 4
+
+[node name="UndisclosedEditing10" parent="." index="5" instance=ExtResource( 2 )]
+position = Vector2( 128, 320 )
+color_index = 2
+
+[node name="UndisclosedEditing11" parent="." index="6" instance=ExtResource( 2 )]
+position = Vector2( 320, 320 )
+color_index = 2
+
+[node name="UndisclosedEditing12" parent="." index="7" instance=ExtResource( 2 )]
+position = Vector2( 512, 320 )
+color_index = 2
+
+[node name="UndisclosedEditing13" parent="." index="8" instance=ExtResource( 2 )]
+position = Vector2( 704, 320 )
+color_index = 2
+
+[node name="UndisclosedEditing14" parent="." index="9" instance=ExtResource( 2 )]
+position = Vector2( 896, 320 )
+color_index = 2
+
+[node name="UndisclosedEditing19" parent="." index="10" instance=ExtResource( 2 )]
+position = Vector2( 128, 512 )
+
+[node name="UndisclosedEditing20" parent="." index="11" instance=ExtResource( 2 )]
+position = Vector2( 320, 512 )
+
+[node name="UndisclosedEditing21" parent="." index="12" instance=ExtResource( 2 )]
+position = Vector2( 512, 512 )
+
+[node name="UndisclosedEditing22" parent="." index="13" instance=ExtResource( 2 )]
+position = Vector2( 704, 512 )
+
+[node name="UndisclosedEditing23" parent="." index="14" instance=ExtResource( 2 )]
+position = Vector2( 896, 512 )
+
+[node name="UndisclosedEditing6" parent="." index="15" instance=ExtResource( 2 )]
+position = Vector2( 224, 224 )
+color_index = 3
+
+[node name="UndisclosedEditing7" parent="." index="16" instance=ExtResource( 2 )]
+position = Vector2( 416, 224 )
+color_index = 3
+
+[node name="UndisclosedEditing8" parent="." index="17" instance=ExtResource( 2 )]
+position = Vector2( 608, 224 )
+color_index = 3
+
+[node name="UndisclosedEditing9" parent="." index="18" instance=ExtResource( 2 )]
+position = Vector2( 800, 224 )
+color_index = 3
+
+[node name="UndisclosedEditing15" parent="." index="19" instance=ExtResource( 2 )]
+position = Vector2( 224, 416 )
+color_index = 1
+
+[node name="UndisclosedEditing16" parent="." index="20" instance=ExtResource( 2 )]
+position = Vector2( 416, 416 )
+color_index = 1
+
+[node name="UndisclosedEditing17" parent="." index="21" instance=ExtResource( 2 )]
+position = Vector2( 608, 416 )
+color_index = 1
+
+[node name="UndisclosedEditing18" parent="." index="22" instance=ExtResource( 2 )]
+position = Vector2( 800, 416 )
+color_index = 1
