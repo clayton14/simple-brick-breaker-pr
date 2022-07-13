@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Simple Brick Breaker"
-run/main_scene="res://scenes_and_scripts/parent_of_all_levels.tscn"
+run/main_scene="res://scenes_and_scripts/title_screen.tscn"
 config/icon="res://art/icon.webp"
 
 [autoload]
